@@ -58,7 +58,8 @@ namespace Chat
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chat application" + Environment.NewLine + "steve@mycosmos.gr", "About");
+            //MessageBox.Show("Chat application" + Environment.NewLine + "steve@mycosmos.gr", "About");
+            new AboutBox().Show();
 
         }
 
@@ -70,6 +71,9 @@ namespace Chat
 
             mainServer.StartListening();    // Start listening for connections
             txtLog.AppendText("Listening for connections...\r\n");
+
+            toolStripButton1.Text = "Server started!";
+            toolStripButton1.Enabled = false;
         }
   
     }

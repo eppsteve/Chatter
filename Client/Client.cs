@@ -53,7 +53,7 @@ namespace Client
             }
             catch
             {
-                MessageBox.Show("Could not establish connection!", "Error");
+                MessageBox.Show("Could not establish connection!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -89,7 +89,6 @@ namespace Client
             {
                 try
                 {
-
                     // Show the messages in the log TextBox
                     this.Invoke(new UpdateLogCallback(this.UpdateLog), new object[] { srReceiver.ReadLine() });
                 }
@@ -101,7 +100,6 @@ namespace Client
         {
             try
             {
-
                 txtLog.AppendText(strMessage + "\r\n"); // Append text also scrolls the TextBox to the bottom each time
             }
             catch { }
@@ -198,7 +196,8 @@ namespace Client
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Chat Application" + Environment.NewLine + "steve@mycosmos.gr", "About");
+            //MessageBox.Show("Chat Application" + Environment.NewLine + "steve@mycosmos.gr", "About");
+            new AboutBox().Show();
         }
 
     }

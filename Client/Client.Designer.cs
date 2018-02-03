@@ -50,7 +50,7 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 25);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -62,18 +62,18 @@
             // 
             this.splitContainer1.Panel2.Controls.Add(this.btnSend);
             this.splitContainer1.Panel2.Controls.Add(this.txtMessage);
-            this.splitContainer1.Size = new System.Drawing.Size(461, 243);
-            this.splitContainer1.SplitterDistance = 186;
+            this.splitContainer1.Size = new System.Drawing.Size(461, 218);
+            this.splitContainer1.SplitterDistance = 166;
             this.splitContainer1.TabIndex = 1;
             // 
             // txtLog
             // 
-            this.txtLog.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.txtLog.Location = new System.Drawing.Point(0, 28);
+            this.txtLog.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtLog.Location = new System.Drawing.Point(0, 0);
             this.txtLog.Multiline = true;
             this.txtLog.Name = "txtLog";
             this.txtLog.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtLog.Size = new System.Drawing.Size(461, 158);
+            this.txtLog.Size = new System.Drawing.Size(461, 166);
             this.txtLog.TabIndex = 0;
             // 
             // btnSend
@@ -82,7 +82,7 @@
             this.btnSend.Enabled = false;
             this.btnSend.Location = new System.Drawing.Point(375, 0);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(86, 53);
+            this.btnSend.Size = new System.Drawing.Size(86, 48);
             this.btnSend.TabIndex = 1;
             this.btnSend.Text = "Send";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -95,7 +95,7 @@
             this.txtMessage.Location = new System.Drawing.Point(0, 0);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(461, 53);
+            this.txtMessage.Size = new System.Drawing.Size(461, 48);
             this.txtMessage.TabIndex = 0;
             // 
             // toolStripLabel1
@@ -164,10 +164,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(461, 243);
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.splitContainer1);
+            this.Controls.Add(this.toolStrip1);
             this.Name = "Client";
-            this.Text = "Chat Client";
+            this.Text = "Chatter Client";
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
